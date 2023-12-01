@@ -375,52 +375,6 @@
   height: 436px;
   object-fit: cover;
 }
-.pagamento-features {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pagamento-features-container {
-  flex: 0 0 auto;
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dl-color-secondary-grey400);
-}
-.pagamento-pricing {
-  flex: 0 0 auto;
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pagamento-gallery {
-  flex: 0 0 auto;
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pagamento-banner {
-  flex: 0 0 auto;
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--dl-color-gray-black);
-}
 .pagamento-faq {
   flex: 0 0 auto;
   width: 100%;
@@ -620,11 +574,7 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .pagamento-desktop-menu {
-    display: none;
-  }
   .pagamento-burger-menu {
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -720,6 +670,12 @@
   }
   .pagamento-logo {
     font-size: 1.5em;
+  }
+  .pagamento-desktop-menu {
+    display: none;
+  }
+  .pagamento-burger-menu {
+    display: flex;
   }
   .pagamento-mobile-menu {
     padding: 16px;
