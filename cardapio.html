@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cardapio - Gourmet cafe</title>
+    <meta property="og:title" content="Cardapio - Gourmet cafe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./cardapio.css" rel="stylesheet" />
+
+      <div class="cardapio-container">
+        <div class="cardapio-header">
+          <header data-thq="thq-navbar" class="cardapio-navbar-interactive">
+            <a href="index.html" class="cardapio-logo">CAFÉ GOURMET</a>
+            <div data-thq="thq-navbar-nav" class="cardapio-desktop-menu">
+              <nav class="cardapio-links">
+                <a href="registro.html">Registro de Usuário</a>
+                <a href="cardapio.html" class="cardapio-nav2">
+                  Catálogo de Produtos
+                </a>
+                <span class="cardapio-nav3">Pedidos Online</span>
+                <span class="cardapio-nav4">Personalização de Pedidos</span>
+                <a href="pagamento.html" class="cardapio-nav5">
+                  Pagamentos&nbsp;
+                </a>
+              </nav>
+              <div class="cardapio-buttons">
+                <a href="registro.html" class="cardapio-login button">Login</a>
+                <a href="registro.html" class="cardapio-register button">
+                  Register
+                </a>
+              </div>
+            </div>
+            <div data-thq="thq-burger-menu" class="cardapio-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="cardapio-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="cardapio-mobile-menu">
+              <div class="cardapio-nav">
+                <div class="cardapio-top">
+                  <span class="cardapio-logo1">CAFÉ GOURMET</span>
+                  <div data-thq="thq-close-menu" class="cardapio-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="cardapio-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="cardapio-links1">
+                  <span class="cardapio-nav11">Registro de Usuário</span>
+                  <span class="cardapio-nav21">Catálogo de Produtos</span>
+                  <span class="cardapio-nav31">Pedidos Online</span>
+                  <span class="cardapio-nav41">Personalização de Pedidos</span>
+                  <span class="cardapio-nav51">Pagamentos Seguros</span>
+                </nav>
+                <div class="cardapio-buttons1">
+                  <button class="cardapio-login1 button">Login</button>
+                  <button class="cardapio-register1 button">Register</button>
+                </div>
+              </div>
+              <div>
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="cardapio-icon04"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="cardapio-icon06"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="cardapio-icon08"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="cardapio-hero">
+          <div class="cardapio-hero1">
+            <div class="cardapio-container1">
+              <h1 class="cardapio-hero-heading heading1">
+                Cardápio de produtos do Café Gourmet&nbsp;
+              </h1>
+              <div class="cardapio-btn-group"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cardapio-details">
+          <div class="cardapio-details1">
+            <div class="cardapio-container2">
+              <span class="cardapio-text sectionTitle">
+                <span>Details</span>
+                <br />
+              </span>
+              <h2 class="cardapio-details-heading heading2">
+                Personalize seu café perfeito
+              </h2>
+              <span class="cardapio-details-sub-heading">
+                Escolha o tipo de grão, intensidade, temperatura e muito mais
+              </span>
+            </div>
+            <img
+              alt="image"
+              src="https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYyMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+              class="cardapio-details-image"
+            />
+          </div>
+        </div>
+        <div class="cardapio-features">
+          <div class="cardapio-features-container"></div>
+        </div>
+        <div class="cardapio-pricing"></div>
+        <div class="cardapio-gallery">
+          <div class="cardapio-gallery1">
+            <h1 class="cardapio-gallery-heading heading2">Produtos Gourmet</h1>
+            <span class="cardapio-gallery-sub-heading">
+              Explore nossa seleção de bebidas e alimentos gourmet
+            </span>
+            <div class="cardapio-container3">
+              <span class="cardapio-text03">Café Simples</span>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name48"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1522992319-0365e5f11656?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name52"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1570109635237-4653cebfb9bb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name50"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1615486780246-76e6bb33e8b5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name51"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1620131810504-79cc8cb61a70?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name49"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name53"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name54"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name55"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1566939937483-6eabe6f79e15?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name56"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name57"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1566304092989-5b82e58ff842?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name58"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name59"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1489596790670-72a2171a2421?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTM0OTYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardapio-banner">
+          <div class="cardapio-banner1">
+            <h1 class="cardapio-banner-heading heading2">
+              Descubra nossa seleção exclusiva de produtos
+            </h1>
+            <span class="cardapio-banner-sub-heading">
+              Explore nosso catálogo de bebidas, alimentos e acompanhamentos
+            </span>
+            <button class="cardapio-banner-button button">
+              Ver catálogo completo
+            </button>
+          </div>
+        </div>
+        <div class="cardapio-faq">
+          <div class="cardapio-faq-container">
+            <div class="cardapio-faq1">
+              <div class="cardapio-container4">
+                <span class="cardapio-text04 sectionTitle">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="cardapio-text07 heading2">Common questions</h2>
+                <span class="cardapio-text08">
+                  <span>
+                    Here are some of the most common questions that we get.
+                  </span>
+                  <br />
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="cardapio-container5">
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>Como faço para me registrar no aplicativo?</span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Para se registrar no aplicativo, basta clicar no botão de
+                      registro e preencher as informações solicitadas, como
+                      nome, endereço de e-mail e senha.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>Quais são as opções de pagamento disponíveis?</span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      O aplicativo oferece diferentes opções de pagamento,
+                      incluindo cartão de crédito, débito, carteiras digitais e
+                      pagamento na entrega.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>
+                      Posso personalizar meu pedido de acordo com minhas
+                      preferências?
+                    </span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Sim, o aplicativo permite que você personalize seu pedido
+                      de acordo com suas preferências. Você pode escolher o tipo
+                      de grão de café, intensidade, temperatura, tamanho da
+                      xícara, quantidade de açúcar, entre outros.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>Como faço para rastrear meu pedido?</span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Você pode rastrear seu pedido através do aplicativo. Basta
+                      acessar a seção 'Meus Pedidos' e você poderá ver o status
+                      do seu pedido em tempo real.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>Existe algum programa de fidelidade disponível?</span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Sim, o aplicativo possui um programa de fidelidade. Você
+                      acumula pontos com base nos pedidos feitos e pode receber
+                      recompensas, como descontos, bebidas gratuitas ou ofertas
+                      especiais.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardapio-footer">
+          <footer class="cardapio-footer1">
+            <div class="cardapio-container6">
+              <span class="cardapio-logo2">CAFÉ GOURMET</span>
+              <nav class="cardapio-nav1">
+                <span class="cardapio-nav12">Registro de Usuário</span>
+                <span class="cardapio-nav22">Catálogo de Produtos</span>
+                <span class="cardapio-nav32">Pedidos Online</span>
+                <span class="cardapio-nav42">Personalização de Pedidos</span>
+                <span class="cardapio-nav52">Pagamentos Seguros</span>
+              </nav>
+            </div>
+            <div class="cardapio-separator"></div>
+            <div class="cardapio-container7">
+              <span class="cardapio-text25">
+                © 2023 myCompany, All Rights Reserved.
+              </span>
+              <div class="cardapio-icon-group1">
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="cardapio-icon10"
+                >
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="cardapio-icon12"
+                >
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 602.2582857142856 1024"
+                  class="cardapio-icon14"
+                >
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
